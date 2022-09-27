@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap"
+            rel="stylesheet">
+        <title>Форма обратной связи</title>
+    </head>
+    <body>
+        <main>
+            <h1>Форма обратной связи</h1>
+            <button class="btn">
+                <a class="text-h" href="aft.html">Аутентификация</a>
+            </button>
+            <form method="post" action="http://httpbin.org/post">
+                <fieldset class="input">
+                    <div class="catigory">
+                        <div>
+                            <label class="text-h" for="fio">ФИО</label>
+                            <input class="margin-rig btn" type="text" name="fio"
+                                id="fio" placeholder="Введите ФИО" required>
+                        </div>
+                        <div>
+                            <label class="text-h" for="email">Email</label>
+                            <input class="btn" tipe="email" name="email"
+                                id="email"
+                                placeholder="Введите email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <fieldset class="pr margin-20 block back-g">
+                            <legend class="text-h">Откуда вы о нас узнали</legend>
+                            <div>
+                                <input type="radio" id="v1" name="sourse"
+                                    value="v1"
+                                    checked>
+                                <label for="v1">От друзей</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="v2" name="sourse"
+                                    value="v2">
+                                <label for="v2">Реклама в интернете</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="v3" name="sourse"
+                                    value="v3">
+                                <label for="v3">Свой вариант в сообщении ниже</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="catigory">
+                        <div class="catigory">
+                            <label class="text-h" for="cftigory">Категория</label>
+                            <select class="back-g" name="category" id="category"
+                                multiple required>
+                                <option value="1">жалоба</option>
+                                <option value="2">предложение</option>
+                            </select>
+                        </div>
+                        <div class="catigory">
+                            <label class="text-h" for="msg">Техт сообщения</label>
+                            <textarea class="back-g" name="msg" id="msg"
+                                cols="30" rows="10" placeholder="Введите
+                                сообщение">=)</textarea>
+                        </div>
+                    </div>
+                    <div class="margin-0">
+                        <label for="at" class="inp-file">
+
+                            <input type="file" name="at" id="at">
+                            <span class="inp-file-btn">Выбрать файл</span>
+                            <label for="at">Дополнительные материалы</label>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="agr" id="agr" value="true"
+                            required>
+                        <label for="agr">Согласен с обработкой персональных
+                            данных</label>
+
+                    </div>
+                    <button class="btn" type="submit">Отправить</button>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
