@@ -91,3 +91,7 @@ form {
     opacity: 0;
     display: block;
 }
+
+.input {
+    margin-top: 20px;
+}

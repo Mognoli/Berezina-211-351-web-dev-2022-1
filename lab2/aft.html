@@ -13,22 +13,19 @@
     <body>
         <main>
             <h1>Форма аутентификации</h1>
-            <button class="btn">
-                <a class="text-h" href="index.html">Обратная связь</a>
-            </button>
+            <a class="btn text-h" href="index.html">Обратная связь</a>
             <form method="post" action="http://httpbin.org/post">
                 <fieldset class="input">
                     <div>
                         <label class="text-h" for="login">Логин</label>
                         <input class="margin-rig btn" type="text" name="login"
                             id="login" placeholder="Введите логин" required>
-                        <label class="text-h" for="passvord">Пароль</label>
-                        <input class="btn" tipe="passvord" name="passvord"
-                            id="passvord" placeholder="Введите пароль" required>
+                        <label class="text-h" for="password">Пароль</label>
+                        <input class="btn" type="password" name="password"
+                            id="password" placeholder="Введите пароль" required>
                     </div>
                     <div>
-                        <input type="checkbox" name="agr" id="agr" value="true"
-                            required>
+                        <input type="checkbox" name="agr" id="agr" value="true">
                         <label for="agr">Запомнить меня</label>
                     </div>
                     <button class="btn" type="submit">Войти</button>
