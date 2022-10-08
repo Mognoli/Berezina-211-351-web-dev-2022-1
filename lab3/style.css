@@ -61,8 +61,6 @@ aside li {
     margin-bottom: 10px;
 }
 
-
-
 .main {
     display: flex;
     background-color: #E9DADF;
@@ -118,8 +116,7 @@ aside h3 {
 }
 
 section h3 {
-    position: sticky;
-    top: 15px;
+    
     margin-top: 15px;
 }
 

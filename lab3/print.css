@@ -1,0 +1,15 @@
+@media print {
+    header, aside, footer {
+        display: none;
+    }
+
+    body, section, .text-cont, .content {
+        display: block;
+    }
+
+    img {
+        display: block;
+        break-inside: avoid;
+    }
+
+}
