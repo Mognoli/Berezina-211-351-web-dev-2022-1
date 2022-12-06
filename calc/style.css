@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+button {
+    font-size: 32px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border: none;
+    border-radius: 50%;
+}
+
+span {
+    font-size: 32px;
+}
+
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    border: none;
+    margin: 5px;
+    min-height: 40px;
+    width: 95%;
+    background-color: white;
+    padding: 10px;
+}
+
+.calc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    justify-content: center;
+    padding: 20px;
+    width: 600px;
+    height: 350px;
+    background-color: lightgreen;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-but {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.digits {
+    flex-wrap: wrap-reverse;
+    width: 36%;
+}
+
+.zero-dot {
+    flex-direction: column;
+}
+
+.other {
+    flex-wrap: wrap;
+    align-content: center;
+    width: 36%;
+}
+
+.flex-last {
+    order: -1;
+}
+
+.flex-beforeLsat {
+    order: 0;
+}
