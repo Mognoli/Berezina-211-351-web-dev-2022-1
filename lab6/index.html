@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+        <title>lab6</title>
+    </head>
+    <body>
+
+
+        <header class="container d-flex flex-wrap justify-content-md-between
+            py-3 mb-4
+            border-bottom bg-c-lg">
+            <div>
+                <img src="img/s1.png" width="40" height="32">
+                <span class="fs-4">Твоя кружка</span>
+            </div>
+
+            <ul class="nav nav-pills d-flex ">
+                <li class="nav-item"><a href="#1h"
+                        class="nav-link p-0 text-muted"
+                        aria-current="page">О компании</a></li>
+                <li class="nav-item px-4"><a href="#2h"
+                        class="nav-link p-0 text-muted">Почему мы?</a></li>
+                <li class="nav-item"><a href="#3h"
+                        class="nav-link p-0 text-muted">Примеры работ</a></li>
+            </ul>
+        </header>
+
+
+        <main>
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center
+                    g-5
+                    py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="img/b2.jpg" class="d-block
+                            mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                            width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 id="1h" class="display-5 fw-bold lh-1 mb-3">Уникальные
+                            кружки
+                            с вашим дизайном</h1>
+                        <p class="lead">Наша компания занимается печатью
+                            на
+                            кружках. Мы печатам на кружках объемом от
+                            200 до 600 мл в 12 вариантов цветов.
+                            Возможен оптовый заказ. Для заказа напишите
+                            нам на почту в социальных сетях или
+                            позвоните.</p>
+                        <div class="d-grid gap-2 d-md-flex
+                            justify-content-md-start">
+                            <button type="button" class="btn btn-primary
+                                btn-lg
+                                px-4 me-md-2">Написать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-4 py-5" id="custom-cards">
+                    <h2 id="2h" class="pb-2 border-bottom">Почему мы?</h2>
+                    <div class="row row-cols-1 row-cols-lg-3
+                        align-items-stretch g-4
+                        py-5">
+                        <div class="col">
+                            <div class="card card-cover h-100
+                                overflow-hidden
+                                rounded-4 shadow-lg ">
+                                <div class="d-flex flex-column h-100 p-5
+                                    pb-3
+                                    text-white text-shadow-1 acol bg-c-lg
+                                    mu-bg">
+                                    <h3 class="pt-5 mt-5 mb-4 display-6
+                                        lh-1
+                                        fw-bold">Высокое качество</h3>
+                                    <p class="d-flex mt-auto d-flex
+                                        align-items-center me-3">
+                                        Разрешение печати наших
+                                        принтеров 1440 dpi
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-cover h-100
+                                overflow-hidden
+                                rounded-4 shadow-lg">
+                                <div class="d-flex flex-column h-100 p-5
+                                    pb-3
+                                    text-white text-shadow-1 bcol bg-c-lg
+                                    mu-bg">
+                                    <h3 class="pt-5 mt-5 mb-4 display-6
+                                        lh-1
+                                        fw-bold">Быстрая доставка</h3>
+                                    <p class="d-flex mt-auto d-flex
+                                        align-items-center me-3">
+                                        Доставка по Москве и Московской
+                                        области в течении 2 дней
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-cover h-100
+                                overflow-hidden
+                                rounded-4 shadow-lg">
+                                <div class="d-flex flex-column h-100 p-5
+                                    pb-3
+                                    text-white text-shadow-1 ccol bg-c-lg
+                                    mu-bg">
+                                    <h3 class="pt-5 mt-5 mb-4 display-6
+                                        lh-1
+                                        fw-bold">Низкие цены</h3>
+                                    <p class="d-flex mt-auto d-flex
+                                        align-items-center me-3">
+                                        Футболка с вашим дизайном от 699
+                                        рублей
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="album py-5">
+                    <h2 id="3h" class="pb-2 border-bottom">Примеры работ</h2>
+                    <div class="container align-items-stretch g-4
+                        py-5">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3
+                            g-3">
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="img/с1.jpg"
+                                        lass="bd-placeholder-img card-img-top"><rect
+                                        width="100%" height="100%"
+                                        fill="#55595c"></rect>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="img/с2.jpg"
+                                        class="bd-placeholder-img card-img-top"><rect
+                                        width="100%" height="100%"
+                                        fill="#55595c"></rect>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="img/с3.jpg"
+                                        class="bd-placeholder-img card-img-top">
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="py-5 container bg-c-lg p-4">
+            <div class=" d-flex justify-content-between row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Меню</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#1h"
+                                class="nav-link p-0 text-muted">О
+                                компании</a></li>
+                        <li class="nav-item mb-2"><a href="#2h"
+                                class="nav-link p-0 text-muted">Почему
+                                мы?</a></li>
+                        <li class="nav-item mb-2"><a href="#3h"
+                                class="nav-link p-0 text-muted">Примеры
+                                работ</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Рассылка</h5>
+                        <p>Подпишитесь на нашу рассылку и узнавайте
+                            обо всех акциях и скидках первыми.</p>
+                        <div class="d-flex flex-column flex-sm-row
+                            w-100
+                            gap-2">
+                            <label for="newsletter1"
+                                class="visually-hidden">Email</label>
+                            <input id="newsletter1" type="text"
+                                class="form-control"
+                                placeholder="Email">
+                            <button class="btn btn-primary"
+                                type="button">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row
+                justify-content-between py-4 my-4 border-top">
+                <p>© 2022 Березина Елизавета 211-351.</p>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
