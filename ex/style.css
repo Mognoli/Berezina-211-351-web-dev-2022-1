@@ -1,3 +1,18 @@
+body {
+    font-family: 'Gentium Book Plus', serif;
+}
 img {
-    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.bg-beige {
+    background-color: #FFF8E8;
+}
+
+.bg-emerald {
+    background-color: #004A36;
+}
+
+.text-light-blue {
+    color: #DEEFFF;
 }
