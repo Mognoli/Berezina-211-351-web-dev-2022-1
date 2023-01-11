@@ -1,6 +1,18 @@
 body {
     font-family: 'Gentium Book Plus', serif;
 }
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 img {
     object-fit: cover;
 }
@@ -15,4 +27,8 @@ img {
 
 .text-light-blue {
     color: #DEEFFF;
+}
+
+.border-light-blue {
+    border-color: #DEEFFF;
 }

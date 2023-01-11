@@ -1,5 +1,3 @@
-
-
 let url = "http://exam-2023-1-api.std-900.ist.mospolytech.ru/api";
 let apiKey = "34182af1-f235-4311-97bb-c8e433a56c69";
 let countOfPages;
@@ -232,7 +230,7 @@ function startSortGuides() {
             listGuides = sortJsonExpWork(listGuides, experienceFrom, experienceUpTo);
         }
     } else {
-        listGuides = globalListGuides;
+        listGuides = allListGuides;
     }
     newListGuides = listGuides;
     return listGuides;
@@ -620,4 +618,6 @@ window.onload = function () {
     });
     document.querySelector('.modal-btn-save').onclick = savingApplication;
 };
+
+
 
