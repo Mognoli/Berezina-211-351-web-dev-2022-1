@@ -452,21 +452,32 @@ function costCalculation(event) {
         else if (numberPeople > 5 && numberPeople < 11) numberOfVisitors = 1000;
         else {
             numberOfVisitors = 1500;
-            document.querySelector('.modal-second-additional-option').disabled = true;
-
         }
+        if (numberPeople > 10) document.querySelector('.modal-second-additional-option').disabled = true;
+        else document.querySelector('.modal-second-additional-option').disabled = false;
         price = price + numberOfVisitors;
     }
+    let priceFirstFunction = 0;
+    priceFirstFunction = price * 0.3;
+    let priceSecondFunction = 0;
+    if (numberOfVisitors == 0) {
+        priceSecondFunction = price * 0.15;
+    }
+    else {
+        priceSecondFunction = price * 0.25;
+    }
     if (document.querySelector('.modal-first-additional-option').checked) {
-        price = price * 1.3;
+        price = price + priceFirstFunction;
     }
     if (document.querySelector('.modal-second-additional-option').checked) {
-        if (numberPeople < 6) price = price * 1.15;
-        else if (numberPeople > 5) price = price * 1.25;
-
+        price = price + priceSecondFunction;
     }
     price = Math.round(price);
     document.querySelector('.modal-price').innerHTML = "Итоговая стоимость: " + price + " рублей.";
+    priceFirstFunction = Math.round(priceFirstFunction);
+    document.querySelector('.modal-price-first-function').innerHTML = "Быстрый выезд гида (в течение часа) <br> Повышает стоимость на 30% <br> Надбавка: " + priceFirstFunction + " рублей.";
+    priceSecondFunction = Math.round(priceSecondFunction);
+    document.querySelector('.modal-price-second-function').innerHTML = "Сопровождение сурдопереводчика <br> Увеличивает стоимость на 15%, если посетителей от 1 до 5, на 25%, если от 5 до 10 <br> Надбавка: " + priceSecondFunction + " рублей.";
 }
 
 function clickOnMakeAnApplication(event) {
@@ -618,6 +629,5 @@ window.onload = function () {
     });
     document.querySelector('.modal-btn-save').onclick = savingApplication;
 };
-
 
 
